@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tohfa — premium pastel showcase design system */
+
+
+@layer base {
+  :root {
+    /* Official Tohfa palette */
+    --background: 40 39.1% 95.5%;        /* warm ivory #F8F5EF */
+    --foreground: 28.7 20.4% 22.2%;      /* deep brown #44382D */
+
+    --blush: 36.4 37.8% 85.5%;           /* champagne beige #E8DDCC */
+    --lavender: 36.4 37.8% 85.5%;        /* legacy section alias */
+    --sage: 36.4 37.8% 85.5%;            /* legacy section alias */
+    --rose: 37 32% 39%;                  /* readable antique gold accent */
+    --gold: 38.4 36.1% 53.3%;            /* antique gold #B3945D */
+    --cocoa: 28.7 20.4% 22.2%;           /* deep brown #44382D */
+    --whatsapp: 147.5 77.2% 31%;         /* accessible WhatsApp green */
+
+    /* Semantic tokens mapped to the palette */
+    --primary: 28.7 20.4% 22.2%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 36.4 37.8% 85.5%;
+    --secondary-foreground: 28.7 20.4% 22.2%;
+
+    --muted: 37.5 30.8% 89.8%;
+    --muted-foreground: 32.3 12.5% 40.8%;
+
+    --accent: 36.4 37.8% 85.5%;
+    --accent-foreground: 28.7 20.4% 22.2%;
+
+    --border: 37.5 29.1% 78.4%;
+    --input: 37.5 29.1% 78.4%;
+    --ring: 38.4 36.1% 53.3%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 28.7 20.4% 22.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 28.7 20.4% 22.2%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --radius: 0.75rem;
+
+    /* Subtle elevated shadow for cards */
+    --shadow-soft: 0 10px 30px -12px hsl(0 11% 40% / 0.18);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans font-light antialiased;
+  }
+
+  /* Anchored sections clear the sticky navbar */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .fade-up {
+    animation: fade-up 0.7s ease-out both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
