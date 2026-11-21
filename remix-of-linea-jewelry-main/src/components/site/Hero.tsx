@@ -8,14 +8,24 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-6 py-14 md:py-20 lg:py-24 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Copy */}
         <div className="fade-up">
-          <p className="text-xs tracking-[0.18em] uppercase text-gold mb-5">
-            {BRAND.name} · {BRAND.descriptor}
-          </p>
+          <p className="font-serif text-lg md:text-xl font-bold not-italic tracking-wide text-gold mb-5 flex items-center">
+  {BRAND.name}
+  <span className="font-sans font-light mx-2 text-base leading-none select-none">–</span>
+  {BRAND.descriptor}
+</p>
+
+
+
+
+
+
+
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mb-6">
-            हर ख़ास पल के लिए, एक ख़ास तोहफ़ा।
+           हर ख़ास पल के लिए, एक ख़ास तोहफा।
           </h1>
+
           <p className="text-base md:text-lg text-foreground/75 font-light leading-relaxed mb-8 max-w-md">
-            Thoughtfully curated gifts and lifestyle finds, chosen to make every moment memorable.
+            Thoughtfully curated gifts, chosen to make every moment memorable.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

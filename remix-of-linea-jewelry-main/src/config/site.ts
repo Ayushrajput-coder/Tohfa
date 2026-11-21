@@ -7,11 +7,11 @@
  */
 
 export const BRAND = {
-  name: "तोहफ़ा",
+  name: "तोहफा",
   descriptor: "Curated by Vaani",
-  tagline: "Thoughtfully curated gifts and lifestyle finds",
+  tagline: "Thoughtfully curated gifts",
   description:
-    "Thoughtfully curated gifts and lifestyle finds, chosen to make every moment memorable.",
+    "Thoughtfully curated gifts, chosen to make every moment memorable.",
   email: "aaroraa.vaani1104@gmail.com",
   address: "Emerald Heights, Sector 88, Greater Faridabad, Haryana – 121002.",
 };
