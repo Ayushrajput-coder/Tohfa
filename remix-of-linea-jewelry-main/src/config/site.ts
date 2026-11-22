@@ -12,7 +12,7 @@ export const BRAND = {
   tagline: "Thoughtfully curated gifts",
   description:
     "Thoughtfully curated gifts, chosen to make every moment memorable.",
-  email: "aaroraa.vaani1104@gmail.com",
+  email: "contact@tohfabyvaani.com",
   address: "Emerald Heights, Sector 88, Greater Faridabad, Haryana – 121002.",
 };
 
